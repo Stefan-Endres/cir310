@@ -1,4 +1,4 @@
-# cir310
+# CIR310
 Git Repository for the course CIR310: Chemical Engineering Thermodynamics at the Department of Chemical Engineering, University of Pretoria.
 
 
