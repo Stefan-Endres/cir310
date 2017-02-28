@@ -14,7 +14,7 @@ In this project you will apply your knowledge of chemical thermodynamics develop
 The pdf file [Project Part 1 Handout.pdf](https://github.com/Stefan-Endres/cir310/blob/master/Project Part 1 Handout.pdf) contains the question for Part 1 of the project to be completed by March 22.
 
 
-Supplementary videos
+Supplementary video lectures
 ---
 
 Mathematical methods
