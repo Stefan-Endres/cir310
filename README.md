@@ -27,7 +27,7 @@ Mathematical methods
 
 [Legendre transformations 3] (https://www.youtube.com/watch?v=mEJTUaL_nWI) 
 
-[Eulers? theorem on homogeneous functions] (https://www.youtube.com/watch?v=s1-B0typoUA )
+[Euler's theorem on homogeneous functions] (https://www.youtube.com/watch?v=s1-B0typoUA )
 
 [Constrained optimisation using Lagrange multipliers] (https://www.youtube.com/watch?v=ry9cgNx1QV8 )
 
@@ -89,13 +89,13 @@ Solutions
 
 [The ideal solution] (https://www.youtube.com/watch?v=vhjDH38Atpw )
 
-[Colligative properties, Raoults law and Henri?s law] (https://www.youtube.com/watch?v=pOLZkrBSxRQ)
+[Colligative properties, Raoults law and Henri's law] (https://www.youtube.com/watch?v=pOLZkrBSxRQ)
 
-[Colligative properties, Raoults law and Henri?s law 2] (https://www.youtube.com/watch?v=Adr9_2LnQdw)
+[Colligative properties, Raoults law and Henri's law 2] (https://www.youtube.com/watch?v=Adr9_2LnQdw)
 
-[Colligative properties, Raoults law and Henri?s law 3] (https://www.youtube.com/watch?v=KUKBwXLS218)
+[Colligative properties, Raoults law and Henri's law 3] (https://www.youtube.com/watch?v=KUKBwXLS218)
 
-[Colligative properties, Raoults law and Henri?s law 4] (https://www.youtube.com/watch?v=snNRWFht_c0)
+[Colligative properties, Raoults law and Henri's law 4] (https://www.youtube.com/watch?v=snNRWFht_c0)
 
 Excess properties
 -
