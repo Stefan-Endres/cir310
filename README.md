@@ -20,17 +20,25 @@ Supplementary videos
 Mathematical methods
 -
 [Partial differentials](https://www.youtube.com/watch?v=nSbfIrgdkG8) 
+
 [Legendre transformations] (https://www.youtube.com/watch?v=jNGtoRo3hw8)
+
 [Legendre transformations 2] (https://www.youtube.com/watch?v=PZfcQIfcWxM)
+
 [Legendre transformations 3] (https://www.youtube.com/watch?v=mEJTUaL_nWI) 
+
 [Eulers? theorem on homogeneous functions] (https://www.youtube.com/watch?v=s1-B0typoUA )
+
 [Constrained optimisation using Lagrange multipliers] (https://www.youtube.com/watch?v=ry9cgNx1QV8 )
+
 [Stirlings approximation for ln N!] (https://www.youtube.com/watch?v=FgrDjsb_kJU )
 
 Basic thermodynamic principles
 -
 [Review of CTD 213 concepts] (https://www.youtube.com/playlist?list=PL4xAk5aclnUiyy5I6QsjJ_3rdKoO0q04I; )
+
 [Laws of thermodynamics] (https://www.youtube.com/watch?v=dL9NfiJjV14 )
+
 [Thermodynamic postulates] (no videos available)
 [Equilibrium conditions] (https://www.youtube.com/watch?v=vmmRfPVyeqk )
 [Stability of thermodynamic systems] (https://www.youtube.com/watch?v=36I0u3VsFTo; https://www.youtube.com/watch?v=sNsWABMT0As; )
