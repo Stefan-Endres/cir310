@@ -23,8 +23,8 @@
 
 \graphicspath{{graph/}}
 
-\title{CIR310 Phase equilibrium project\\Part 1}
-\date{Submission deadline: 22.03.2017 before 13:30}
+\title{CIR310 Phase equilibrium project\\Part 2}
+\date{Submission deadline: 24.04.2017 before 13:30}
 
 \newcounter{eqs}
 \setcounter{eqs}{0}
@@ -148,26 +148,39 @@ The system equations as developed by \citet{HU19991353} are shown in \autoref{ta
 
 
 
- 
-\newpage
-\pagebreak
 \section{Instructions}
-Your company commissioned a reactor/column process based on a design using the described model.  After startup however, a much lower yield than predicted by the design was was found. You and your colleagues have been assigned to investigate the process model, to improve its accuracy and to find solutions to improve the yield of the process.  
 
-\begin{enumerate}
-\item Using  only your background in thermodynamics and elementary chemistry, list the possible reasons why a lower steady state conversion than predicted by the model was obtained. For every possibility listed, suggest solutions and/or tests that can be performed on the system. Where relevant show the improvements to the model (write down these equations). Provide at least 4 possibilities relevant to the phase equilibria of the system, especially with regards to the assumptions made by the model.  \ovalbox{40}
-\item Prove that if an ideal gas model can be assumed, then increasing the reactor temperature will result in zero conversion of the reactant. Write down this temperature point. \ovalbox{10}
-\item Describe how you would incorporate the following thermodynamic models into the system of equations. Write down the relevant supporting equations, but do not do any explicit symbolic computations. You may cite relevant algorithms from textbooks and other literature sources. Show that the degrees of freedom are zero. %\ovalbox{40}
-\begin{itemize}
-\item Activity coefficient models (ex. NRTL, UNIQUAC).  \ovalbox{20}
-\item Cubic equation of state models (ex. Virial Van der Waals, Peng-Robinson, Redlich-Kwong). \ovalbox{20}
-\item Virial equations of state (ex. Truncated compressibility equations with virial coefficient correlations). \ovalbox{5}
-\item K-value correlations from VLE data. \ovalbox{5}
-\end{itemize}
+Based on your findings from the initial investigation into the process model it was decided that a more sophisticated thermodynamic model would be required to accurately simulate this system. It was decided to incorporate a cubic equation of state into the model. To calculate the fugacities from the mechanical equation of state (a PVT relation) we will need to find expressions for the fugacity coefficient of a component in a mixture.
 
-%\item \ovalbox{\verb|steady_state.py|} 
-\end{enumerate}
+The van der Waals equation of state is given by
+$$
+P = \frac{RT}{v - b} - \frac{a}{v^2}
+$$
 
+The fugacity coefficient of a component $i$ in a mixture can be calculated using Equation 11.60 from Smith, Van Ness and Abbott (SvA) p. 404
+$$
+\ln{\hat{\phi}_i} = \int^P_0 (\bar{Z}_i - 1) \frac{d P}{P}
+$$
+where $\bar{Z}_i  = \frac{\left( \partial n Z \right)}{\partial n_i}$. Using this equation together with the van der Waals mixing parameters. (SvA Equations 14.42 and 14.43 p. 561)
+$$
+b = \sum_{i} x_i b_i
+$$
+
+$$
+a = \sum_{i}\sum_{j} x_i x_j a_{ij}
+$$
+ where $a_{ij} = \sqrt{a_i a_j}$
+ 
+
+%% VdW
+
+ Show that the fugacity coefficient of component $i$ in a mixture described by the Van der Waals equation of state is given by
+ 
+$$
+\ln{\hat{\phi}_i} = \ln{\left(\frac{v}{v - b} \right)}+ \frac{b_i}{v - b} - \frac{2 \sqrt{a_i} \sum_{i = 1}^n x_i \sqrt{a_i} }{v R T} - \ln{Z}
+$$
+
+ 
 \begin{centering}
 Total Marks: \Ovalbox{100}\\
 \end{centering}
