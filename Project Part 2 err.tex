@@ -1,0 +1,98 @@
+\documentclass[12pt, A4paper]{article}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc} 
+\usepackage{pdflscape}
+
+\usepackage{mhchem}
+\usepackage[numbers]{natbib}
+
+\usepackage{fancybox}
+\usepackage{graphicx}
+\usepackage{color}
+%\usepackage[margin=0.7in]{geometry}
+\setlength{\abovetopsep}{1em}
+
+\usepackage{siunitx}
+\sisetup{locale=ZA}
+
+
+\usepackage[margin=1.2in]{geometry}
+
+\graphicspath{{graph/}}
+
+\title{CIR310 Phase equilibrium project\\Part 2}
+\date{Submission deadline: 22.05.2017 before 13:30}
+
+\newcounter{eqs}
+\setcounter{eqs}{0}
+\newcommand{\eq}{\stepcounter{eqs}\arabic{eqs}}
+
+\newcounter{variables}
+\setcounter{variables}{0}
+
+\newcounter{inputs}
+\setcounter{inputs}{0}
+\newcommand{\definput}[1]{\ensuremath{#1}\stepcounter{inputs}\stepcounter{variables}}
+
+\newcounter{outputs}
+\setcounter{outputs}{0}
+\newcommand{\defoutput}[1]{\ensuremath{#1}\stepcounter{outputs}\stepcounter{variables}}
+
+\newcounter{parameters}
+\setcounter{parameters}{0}
+\newcommand{\defparameter}[1]{\ensuremath{#1}\stepcounter{parameters}\stepcounter{variables}}
+
+\newcommand{\describesection}[1]{\multicolumn{2}{l}{\emph{#1}}}
+
+
+
+%% listings
+\usepackage{listings}
+\usepackage{color}
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+\lstset{ %
+  backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}; should come as last argument
+  basicstyle=\footnotesize,        % the size of the fonts that are used for the code
+  breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+  breaklines=true,                 % sets automatic line breaking
+  captionpos=b,                    % sets the caption-position to bottom
+  commentstyle=\color{mygreen},    % comment style
+  deletekeywords={...},            % if you want to delete keywords from the given language
+  escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+  extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+  frame=single,	                   % adds a frame around the code
+  keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+  keywordstyle=\color{blue},       % keyword style
+  language=Python,                 % the language of the code
+  morekeywords={*,...},           % if you want to add more keywords to the set
+  numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+  numbersep=5pt,                   % how far the line-numbers are from the code
+  numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
+  rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+  showstringspaces=false,          % underline spaces within strings only
+  showtabs=false,                  % show tabs within strings adding particular underscores
+  stepnumber=2,                    % the step between two line-numbers. If it's 1, each line will be numbered
+  stringstyle=\color{mymauve},     % string literal style
+  tabsize=2,	                   % sets default tabsize to 2 spaces
+  title=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
+}
+
+
+\begin{document}
+
+$$
+\ln{\hat{\phi}_i} = \ln{\left(\frac{v}{v - b} \right)}  + \frac{b_i}{v - b} - \frac{2 \sum_{j} y_j a_{ji}}{R T^{3/2} b} \ln{\left( \frac{v + b}{v} \right)}  + \frac{a b_i}{RT^{3/2} b^2} \left( \ln \left( \frac{v + b}{v}\right) \frac{b}{v + b}  \right) - \ln Z
+$$
+
+$$
+\ln{\hat{\phi}_i} = \ln{\left(\frac{v}{v - b} \right)}  + \frac{b_i}{v - b} - \frac{2 \sum_{j} y_j a_{ji}}{R T^{3/2} b} \ln{\left( \frac{v + b}{v} \right)}  + \frac{a b_i}{RT^{3/2} b^2} \left( \ln \left( \frac{v + b}{v}\right) - \frac{b}{v + b}  \right) - \ln Z
+$$
+
+
+\end{document}
